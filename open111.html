@@ -1,0 +1,56 @@
+<html>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("images3.jpg");
+
+    /* Full height */
+    height:100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+	<div class =bg>
+<br><br><br><br><br><br><br><br>
+
+<center><head><font size="10 face="georgia header" color="green">My Biller</head></center>
+<p>
+<p>
+
+
+<center><form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br /><br>
+    <input type="button" value="Login"  onclick="javascript:validate()" />
+</form><center>
+
+
+
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "MyBiller"
+       && document.getElementById("text2").value == "Abhijit" )
+    {
+        alert( "validation succeeded" );
+        location.href="test.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        location.href="fail.html";
+    }
+}
+
+
+</script>
+
